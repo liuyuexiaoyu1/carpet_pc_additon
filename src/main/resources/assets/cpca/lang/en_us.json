@@ -1,13 +1,7 @@
 {
-
-
-
-
-
-
-
   "carpet.rule.Fixlongoverflow.name" : "Fix Entity X Coordinate Crash",
-  "carpet.rule.Fixlongoverflow.desc" : "Fixing the issue where retrieving the entity's x-coordinate value within the range [33554414.0, 33554434.0) causes the game to crash with an IllegalArgumentException."
+  "carpet.rule.Fixlongoverflow.desc" : "Fixing the issue where retrieving the entity's x-coordinate value within the range [33554414.0, 33554434.0) causes the game to crash with an IllegalArgumentException.",
 
-
+  "carpet.rule.MinecartMotionFix.name": "重新引入1.21矿车跨纬度传递动量",
+  "carpet.rule.MinecartMotionFix.desc": "移植1.21-1.21.1版本中矿车携带乘客跨纬度会在传送tick给予乘客矿车的动量到1.21.2以上版本"
 }
