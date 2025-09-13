@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "carpet_pc_addition",
+  "version": "${version}",
+  "name": "carpet pc addition",
+  "description": "为inf矿车猪炮的崩服及高版本失效问题进行修复",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.pigconnon.carpet_pc_addition.client.Carpet_pc_additionDataGenerator"
+    ],
+    "client": [
+      "com.pigconnon.carpet_pc_addition.client.Carpet_pc_additionClient"
+    ],
+    "main": [
+      "com.pigconnon.carpet_pc_addition.Carpet_pc_addition"
+    ]
+  },
+  "mixins": [
+    "carpet_pc_addition.mixins.json",
+    {
+      "config": "carpet_pc_addition.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
