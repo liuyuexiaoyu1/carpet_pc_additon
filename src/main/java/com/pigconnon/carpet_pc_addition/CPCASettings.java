@@ -29,8 +29,10 @@ import carpet.api.settings.Rule;
 
 public class CPCASettings
 {
-
-
+    @Rule(
+            categories = { FEATURE}
+    )
+    public static boolean MinecartMotionFix = false;
 
     @Rule(
             categories = { FEATURE}

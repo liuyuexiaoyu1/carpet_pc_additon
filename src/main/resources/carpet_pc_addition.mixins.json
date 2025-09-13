@@ -4,7 +4,9 @@
   "package": "com.pigconnon.carpet_pc_addition.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "Fixlongoverflow.SectionedEntityCacheMixin"
+    "Fixlongoverflow.SectionedEntityCacheMixin",
+    "MinecartMotionFix.EntityMixin",
+    "MinecartMotionFix.NetherPortalBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

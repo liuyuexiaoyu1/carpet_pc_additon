@@ -1,13 +1,8 @@
 {
-
-
-
-
-
-
-
   "carpet.rule.Fixlongoverflow.name" : "Fix Entity X Coordinate Crash",
-  "carpet.rule.Fixlongoverflow.desc" : "Fixing the issue where retrieving the entity's x-coordinate value within the range [33554414.0, 33554434.0) causes the game to crash with an IllegalArgumentException."
+  "carpet.rule.Fixlongoverflow.desc" : "Fixing the issue where retrieving the entity's x-coordinate value within the range [33554414.0, 33554434.0) causes the game to crash with an IllegalArgumentException.",
 
-
+  "carpet.rule.MinecartMotionFix.name": "Reintroduce 1.21 Minecart Momentum Transfer Across Dimensions",
+  "carpet.rule.MinecartMotionFix.desc": "Ports the feature from versions 1.21-1.21.1 where minecars carrying passengers transfer their momentum to passengers during the teleport tick when crossing dimensions to version 1.21.2 and above"
 }
+
