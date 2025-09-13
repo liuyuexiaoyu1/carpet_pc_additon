@@ -30,7 +30,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import rems.carpet.REMSSettings;
+import com.pigconnon.carpet_pc_addition.CPCASettings;
 
 import java.util.Set;
 
@@ -45,14 +45,9 @@ public abstract class EntityMixin {
     @Inject(method = "getPassengerTeleportTarget",at = @At("RETURN"), cancellable = true)
     private void getPassengerTeleportTarget(TeleportTarget teleportTarget, Entity passenger,
                                             CallbackInfoReturnable<TeleportTarget> cir){
-        if(REMSSettings.MomentumFix) {
+        if(CPCASettings.MinecartMotionFix) {
             cir.setReturnValue(new TeleportTarget(teleportTarget.world(), teleportTarget.position(), teleportTarget.velocity(),
                     0, 0, teleportTarget.postTeleportTransition()));
         }
     }
-
-//    @Inject(method = "teleportTo",at = @At("HEAD"))
-//    private void m(TeleportTarget teleportTarget, CallbackInfoReturnable<Entity> cir){
-//        LOGGER.info("{} {}",this,teleportTarget);
-//    }
 }
