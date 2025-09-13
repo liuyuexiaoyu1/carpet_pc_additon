@@ -1,0 +1,4 @@
+{
+  "carpet.rule.cpacFixlongoverflow.name" : "修复实体x坐标异常崩溃",
+  "carpet.rule.Fixlongoverflow.desc" : "修复实体x坐标取值在[33554414.0, 33554434.0)导致游戏IllegalArgumentException崩溃"
+}
