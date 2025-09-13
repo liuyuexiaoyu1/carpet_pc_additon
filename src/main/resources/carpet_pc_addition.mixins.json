@@ -4,6 +4,7 @@
   "package": "com.pigconnon.carpet_pc_addition.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "Fixlongoverflow.SectionedEntityCacheMixin"
   ],
   "injectors": {
     "defaultRequire": 1
