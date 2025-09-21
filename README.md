@@ -1,7 +1,7 @@
 # Carpet pigconnon addition
 ## 为inf矿车猪炮的崩服及高版本失效问题进行修复
 
-MinecartMotionFix规则使1.21.2以上可以使用inf矿车猪炮
+MinecartMotionFix规则使1.21.2以上可以使用inf矿车猪炮（仅1.21.2以上版本的拓展有此规则）
 
 **1.21-1.21.1可以纯原版不安装任何加载器及mod开炮，1.21.2以上必须使用CPCA！！！！**
 
