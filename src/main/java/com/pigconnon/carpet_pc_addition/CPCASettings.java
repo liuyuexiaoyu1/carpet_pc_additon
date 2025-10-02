@@ -37,5 +37,9 @@ public class CPCASettings
 
     )
     public static boolean Fixlongoverflow = false;
+    @Rule(
+            categories = { COMMAND}
+    )
+    public static String Commandnickname = "ops";
 
 }

@@ -5,6 +5,8 @@ import carpet.CarpetServer;
 import carpet.api.settings.SettingsManager;
 import com.pigconnon.carpet_pc_addition.utils.ComponentTranslate;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.server.MinecraftServer;
 import java.util.Map;
 
 public class CPCAServer implements CarpetExtension, ModInitializer {
@@ -13,13 +15,20 @@ public class CPCAServer implements CarpetExtension, ModInitializer {
     public static final String MOD_ID = "carpet_pigconnon_addition";
     public static SettingsManager settingsManager;
     public static final String MOD_VERSION = "1.0-SNAPSHOT";
+    private static MinecraftServer server;
+
     public static void loadExtension() {
         CarpetServer.manageExtension(INSTANCE);
     }
     @Override
     public void onInitialize() {
         CPCAServer.loadExtension();
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+            NicknameCommand.register(dispatcher);
+        });
+        NicknameManager.getInstance().initializeStorage();
     }
+
     @Override
     public void onGameStarted() {
         settingsManager = new SettingsManager(MOD_VERSION, MOD_ID, "cpca");

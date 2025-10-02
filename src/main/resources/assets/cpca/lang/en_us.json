@@ -1,13 +1,7 @@
 {
-
-
-
-
-
-
-
   "carpet.rule.Fixlongoverflow.name" : "Fix Entity X Coordinate Crash",
-  "carpet.rule.Fixlongoverflow.desc" : "Fixing the issue where retrieving the entity's x-coordinate value within the range [33554414.0, 33554434.0) causes the game to crash with an IllegalArgumentException."
-
+  "carpet.rule.Fixlongoverflow.desc" : "Fixing the issue where retrieving the entity's x-coordinate value within the range [33554414.0, 33554434.0) causes the game to crash with an IllegalArgumentException.",
+  "carpet.rule.Commandnickname.name" : "Enable nickname command",
+  "carpet.rule.Commandnickname.desc" : "Enable nickname command"
 
 }
